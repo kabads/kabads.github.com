@@ -3,6 +3,10 @@ layout: page
 title: Hello World!
 tagline: Supporting tagline
 ---
+{% for post in site.posts %}
+ <p><a href="{{post.url}}">{{post.title}}</a></p>
+{% endfor %}
+
 {% include JB/setup %}
 
 Read [Jekyll Quick Start](http://jekyllbootstrap.com/usage/jekyll-quick-start.html)
